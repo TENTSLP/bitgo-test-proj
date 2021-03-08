@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@bitgo/utxo-lib": "github:BitGo/bitgo-utxo-lib#84e00ee2463f4f97b5821f6eb119e094fbccb231",
+    "bip39": "^3.0.3"
+  }
+}
