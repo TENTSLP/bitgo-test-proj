@@ -2,23 +2,23 @@ let bitGoUTXO = require('@bitgo/utxo-lib');
 var bip39 = require('bip39');
 
 const seeds = "...";
-const pathh = "m/44'/0'/0'";
-const type = 133;
+const pathh = "m/44'/410'/0'";
+const type = 410;
 const feeLevel = 10000;
 const utxo = {
-  "txid": "3631f681f1c1fc501575278c08ed82913fae996e33ac481c50fc07edc1922d56",
-  "vout": 43,
-  "satoshis": 1076625
+  "txid": "1c467e1eba579958e9a2db783ab302a97f8d8295fed020776937a06beb5b9204",
+  "vout": 1,
+  "satoshis": 86960000
 }
 
 const out1 = {
-  "address": "t1QUXiznC6Frj1QDBu6BzF9xZrP561Ridpv",
+  "address": "s1ZeaiTJ64z3vpWemfCrUduQmPzWQn7jkp4",
   "value": 1000000
 }
 
 const out2 = {
-  "address": "t1XVDq78sp6Sozh1RNaUjzHT59iRDtGAMLf",
-  "value": 66625
+  "address": "s1eUmEMctBXNsCHJWstDaxxUmVd9hdTtLVR",
+  "value": 85950000
 }
 
 
@@ -114,7 +114,7 @@ function createTransaction(out1, out2, feeLevel, utxo) {
 
   txb.setVersion(4)
   txb.setConsensusBranchId(parseInt('0xE9FF75A6', 16))
-  txb.setVersionGroupId(parseInt('0xE9FF75A6', 16))
+  txb.setVersionGroupId(parseInt('0x892F2085', 16))
 
 
   var priv = getXpriv("zec", mainPriv, 0, false);
